@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GAMESTORM</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+  </head>
+    
+    
+  <body class="p-3 mb-2 bg-dark text-white">
+
+    <!--INICIO ENCABEZADO-->
+    <div class="container-fluid">
+      <header class="header p-3 mb-2 bg-dark">
+        <img src="../img/head.png" class="img-fluid rounded-top" alt="GAMESTOMR">
+        <p>GAMESTORM</p>
+      </header>
+    </div>
+    <!--TERMINO ENCABEZADO-->
+
+    <!--INICIO BARRA DE VAVEGACION-->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg mb-3 bg-secondary p-2" style="--bs-bg-opacity: .9;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="categoria.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorías
+                </a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li><a class="dropdown-item" href="categoria/accion.html">Acción</a></li>
+                  <li><a class="dropdown-item" href="categoria/aventura.html">Aventura</a></li>
+                  <li><a class="dropdown-item" href="categoria/carreras.html">Carreras</a></li>
+                  <li><a class="dropdown-item" href="categoria/deportes.html">Deportes</a></li>
+                  <li><a class="dropdown-item" href="categoria/rol.html">Rol</a></li>
+                  <li><a class="dropdown-item" href="categoria/shooters.html">Shooters</a></li>
+                  <li><a class="dropdown-item" href="categoria/terror.html">Terror</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="categoria.html">Todas las categorias</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="carro.html">Carro de compras</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--TERMINO BARRA DE VAVEGACION-->
+
+    <!-- INICIO CAJA INICIO DE SESION -->
+    <div class="container">
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-success" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Iniciar sesión</a>
+      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body bg-secondary">
+              <!-- INICIO FORMULARIO DE LOGIN -->
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">name@example.com</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <div id="emailHelp" class="form-text">Recuerda que tu contraseña debe ser mayor a 3 caracteres, contener letras y números.</div>
+                </div>
+                <div class="form-floating mb-2">
+                  <select class="form-select" id="floatingSelectGrid">
+                    <option selected>Selecciona un perfil</option>
+                    <option value="1">Cliente</option>
+                    <option value="2">Administrador</option>
+                    <!-- <option value="3">Three</option> -->
+                  </select>
+                  <label for="floatingSelectGrid">Ingresar como:</label>
+                </div>
+                <button type="submit" class="btn btn-success">Confirmar identidad</button>
+              </form>
+              <!-- TERMINO FORMULARIO DE LOGIN -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINO CAJA INICIO DE SESION -->
+
+    <!-- INICIO GRUPO DE BOTONES INICIO DE SESION -->
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h4 class="text-center mb-3">FORMULARIO DE REGISTRO</h4>
+          </div>
+      </div>
+    </div>
+    <!-- TERMINO GRUPO DE BOTONES INICIO DE SESION -->
+
+    <Br></Br>
+
+    <!-- INICIO FORMULARIO DE REGISTRO -->
+    <div class="container mb-3">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <form class="row g-3" id="formulario">
+                <div class="col-md-6">
+                  <label for="inputNombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputApellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-12">
+                  <label for="inputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword2" class="form-label">Confirma Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword2">
+                </div>
+                <div class="col-12">
+                  <label for="inputPhone" class="form-label">Teléfono</label>
+                  <input type="text" class="form-control" id="inputPhone" placeholder="+569 999 9999">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Dirección 2</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Avenida/Pasaje #numero">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Región</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Elige...</option>
+                    <option>Region Metropolitana</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Comuna</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Elige...</option>
+                    <option>Santiago</option>
+                    <option>Cerrillos</option>
+                    <option>Cerro Navia</option>
+                    <option>Conchalí</option>
+                    <option>El Bosque</option>
+                    <option>Estación Central</option>
+                    <option>Huechuraba</option>
+                    <option>Independencia</option>
+                    <option>La Cisterna</option>
+                    <option>La Florida</option>
+                    <option>La Granja</option>
+                    <option>La Pintana</option>
+                    <option>La Reina</option>
+                    <option>Las Condes</option>
+                    <option>Lo Barnechea</option>
+                    <option>Lo Espejo</option>
+                    <option>Lo Prado</option>
+                    <option>Macul</option>
+                    <option>Maipú</option>
+                    <option>Ñuñoa</option>
+                    <option>Pedro Aguirre Cerda</option>
+                    <option>Peñalolén</option>
+                    <option>Providencia</option>
+                    <option>Pudahuel</option>
+                    <option>Quilicura</option>
+                    <option>Quinta Normal</option>
+                    <option>Recoleta</option>
+                    <option>Renca</option>
+                    <option>San joaquín</option>
+                    <option>Vitacura</option>
+                    <option>Puente Alto</option>
+                    <option>Pirque</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="inputZip" class="form-label">Código postal</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Verifícame
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-success">Ingresar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINO FORMULARIO DE REGISTRO -->
+
+
+<br></body>
+
+    <!--INICIO FOOTER-->
+    <footer>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-12">
+                <div class="card text-center">
+                  <div class="card-header bg-secondary">
+                    <!-- texto cabecera Footer -->
+                  </div>
+                  <div class="card-body">
+                    <!-- <h10 class="card-title">Design by Group 10</h10> -->
+                    <p class="card-text">Trabajo sumativo E1.grupo10_S3.</p>
+                    <!-- <a href="#" class="btn btn-secondary p-2">Go somewhere</a> -->
+                  </div>
+                  <div class="card-footer text-body-secondary bg-secondary">
+                    <!-- texto secundario footer -->
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--TERMINO FOOTER-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+
+    <script src="js/miscript.js"></script>
+
+    <script>
+    //FUNCION PARA VALIDAR FORMATO DE LA CONTRASEÑA (Que sea de un minimo de 4 caracteres, que contenga 1 mayuscula y 1 numero)
+    function validarContrasena(inputPassword) {
+      // variable de requisitos
+      var regex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{4,}$/;
+      // si cumple los requisitos, se devuelve true
+      if (regex.test(inputPassword)) {
+        return true;
+      }
+      // si no, devuelve false
+      else {
+        return false;
+      }
+    }
+    var formulario = document.getElementById("formulario");
+    formulario.addEventListener("submit", function(event) {
+      // se obtiene el valor de la contraseña ingresada
+      var inputPassword = document.getElementById("inputPassword").value;
+      // se llama a la función que valida la contraseña y guardar el resultado
+      var valido = validarContrasena(inputPassword);
+      // si el resultado es falso, se mostrara un mensaje o alerta de error
+      if (!valido) {
+        alert("La contraseña debe tener al menos 4 caracteres, una mayúscula y un número");
+        event.preventDefault();
+      }
+    });
+    </script>
+  </body>
+</html>

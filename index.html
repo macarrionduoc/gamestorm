@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GAMESTORM</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+    
+    
+  <body class="p-3 mb-2 bg-dark text-white">
+
+    <!--INICIO ENCABEZADO-->
+    <div class="container-fluid">
+      <header class="header p-3 mb-2 bg-dark">
+        <img src="img/head.png" class="img-fluid rounded-top" alt="GAMESTOMR">
+        <p>GAMESTORM</p>
+      <!-- <header class="bg-success p-2 text-white"> -->
+      <!-- <header class="header bg-success p-2" style="--bs-bg-opacity: .5;"> -->
+        <!-- <img src="img/head.png" class="img-fluid rounded mx-auto d-block" alt="GAMESTOMR"> -->
+        <!-- <img src="img/head.png" alt="GAMESTORM" class="logo"> -->
+      </header>
+    </div>
+    <!--TERMINO ENCABEZADO-->
+
+    <!--INICIO BARRA DE VAVEGACION-->
+    <div class="container-fluid">
+      <!-- <nav class="navbar navbar-expand-lg bg-success p-2" style="--bs-bg-opacity: .5;"> -->
+      <nav class="navbar navbar-expand-lg mb-3 bg-secondary p-2" style="--bs-bg-opacity: .9;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="categoria.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorías
+                </a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li><a class="dropdown-item" href="categoria/accion.html">Acción</a></li>
+                  <li><a class="dropdown-item" href="categoria/aventura.html">Aventura</a></li>
+                  <li><a class="dropdown-item" href="categoria/carreras.html">Carreras</a></li>
+                  <li><a class="dropdown-item" href="categoria/deportes.html">Deportes</a></li>
+                  <li><a class="dropdown-item" href="categoria/rol.html">Rol</a></li>
+                  <li><a class="dropdown-item" href="categoria/shooters.html">Shooters</a></li>
+                  <li><a class="dropdown-item" href="categoria/terror.html">Terror</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="categoria.html">Todas las categorias</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="carro.html">Carro de compras</a>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--TERMINO BARRA DE VAVEGACION-->
+
+    <!-- INICIO CAJA INICIO DE SESION -->
+    <div class="container">
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-success" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Iniciar sesión</a>
+      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body bg-secondary">
+              <!-- INICIO FORMULARIO DE LOGIN -->
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">name@example.com</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <div id="emailHelp" class="form-text">Recuerda que tu contraseña debe ser mayor a 3 caracteres, contener letras y números.</div>
+                </div>
+                <div class="form-floating mb-2">
+                  <select class="form-select" id="floatingSelectGrid">
+                    <option selected>Selecciona un perfil</option>
+                    <option value="1">Cliente</option>
+                    <option value="2">Administrador</option>
+                    <!-- <option value="3">Three</option> -->
+                  </select>
+                  <label for="floatingSelectGrid">Ingresar como:</label>
+                </div>
+                <!-- <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Verificado</label>
+                </div> -->
+                <button type="submit" class="btn btn-success">Confirmar identidad</button>
+              </form>
+              <!-- TERMINO FORMULARIO DE LOGIN -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TERMINO CAJA INICIO DE SESION -->
+
+    <!-- INICIO  TITULO PAGINA - BOTON REGISTRO -->
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-4">
+            <h2 class="text-center mb-3">Home</h2>
+            <h4 class="text-center mb-3">¿Tu primera vez en Gamestorm?</h4>
+              <div class="row justify-content-center">
+                <div class="col-md-4">
+                  <a class="btn btn-warning mb-3" href="registro.html" role="button">Regístrate</a>
+                </div>
+              </div>
+            <h6 class="text-center mb-3">Es gratis y muy fácil. Descubre miles de juegos para disfrutar con tus amigos.</h6>
+          </div>
+      </div>
+    </div>
+    <!-- TERMINO  TITULO PAGINA - BOTON REGISTRO -->
+
+    <Br></Br>
+
+    <!-- INICIO SLIDESHOW -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/accion_apex.jpg" class="d-block w-100" alt="APEX">
+              </div>
+              <div class="carousel-item">
+                <img src="img/accion_battlegrounds.jpg" class="d-block w-100" alt="BATTLEGROUNDS">
+              </div>
+              <div class="carousel-item">
+                <img src="img/carreras_needForSpeed_Delux.jpg" class="d-block w-100" alt="Need For Speed Delux">
+              </div>
+              <div class="carousel-item">
+                <img src="img/deportes_fc24.jpg" class="d-block w-100" alt="FC 24">
+              </div>
+              <div class="carousel-item">
+                <img src="img/rol_eldenRing.jpg" class="d-block w-100" alt="Elden Ring">
+              </div>
+              <div class="carousel-item">
+                <img src="img/shooter_couterStrike.jpg" class="d-block w-100" alt="Counter Strike">
+              </div>
+              <div class="carousel-item">
+                <img src="img/terror_deadDaylight.jpg" class="d-block w-100" alt="Dead Daylight">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- INICIO SLIDESHOW -->
+
+
+    <Br></Br>
+
+
+
+
+
+<!-- INICIO - CAJA DE BOTONES ////////////////////////////////////////////////////////////-->
+    <!-- <div class="container-fluid"> 
+      <div class="btn-group-vertical" role="group" aria-label="">
+        <button type="button" class="btn btn-secondary">First One</button>
+        <button type="button" class="btn btn-secondary">Second One</button>
+        <button type="button" class="btn btn-secondary">Second One</button>
+        <button type="button" class="btn btn-secondary">Second One</button>
+        <button type="button" class="btn btn-secondary">Second One</button>
+        <button type="button" class="btn btn-secondary">Second One</button>
+        <button type="button" class="btn btn-secondary">Second One</button>
+      </div> -->
+
+      <!-- INICIO - ESTOS SON BOTONES CON CON SELECT -->
+      <!-- <div class="btn-group" role="group">
+        <button id="dropdownId" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            More
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownId">
+          <a class="dropdown-item" href="#">First Dropdown</a>
+          <a class="dropdown-item" href="#">Second Dropdown</a>
+        </div>
+      </div> -->
+      <!-- TERMINO - ESTOS SON BOTONES CON CON SELECT -->
+
+    <!-- </div> -->
+<!-- TERMINO - CAJA DE BOTONES ////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+    <!--INICIO FOOTER-->
+    <footer>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-12">
+                <div class="card text-center">
+                  <div class="card-header bg-secondary">
+                    <!-- Footer -->
+                  </div>
+                  <div class="card-body">
+                    <!-- <h10 class="card-title">Design by Group 10</h10> -->
+                    <p class="card-text">Trabajo sumativo E1.grupo10_S3.</p>
+                    <!-- <a href="#" class="btn btn-secondary p-2">Go somewhere</a> -->
+                  </div>
+                  <div class="card-footer text-body-secondary bg-secondary">
+                    <!-- texto secundario footer -->
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--TERMINO FOOTER-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    
+    <script src="js/miscript.js"></script>
+
+
+    <script>
+      //FUNCION PARA VALIDAR FORMATO DE LA CONTRASEÑA (Que sea de un minimo de 4 caracteres, que contenga 1 mayuscula y 1 numero)
+      function validarContrasena(inputPassword) {
+        // variable de requisitos
+        var regex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{4,}$/;
+        // si cumple los requisitos, se devuelve true
+        if (regex.test(inputPassword)) {
+          return true;
+        }
+        // si no, devuelve false
+        else {
+          return false;
+        }
+      }
+      var formulario = document.getElementById("formulario");
+      formulario.addEventListener("submit", function(event) {
+        // se obtiene el valor de la contraseña ingresada
+        var inputPassword = document.getElementById("inputPassword").value;
+        // se llama a la función que valida la contraseña y guardar el resultado
+        var valido = validarContrasena(inputPassword);
+        // si el resultado es falso, se mostrara un mensaje o alerta de error
+        if (!valido) {
+          alert("La contraseña debe tener al menos 4 caracteres, una mayúscula y un número");
+          event.preventDefault();
+        }
+      });
+      </script>
+  </body>
+</html>
